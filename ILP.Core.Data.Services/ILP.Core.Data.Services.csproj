@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ILP.Core.Data.Contracts\ILP.Core.Data.Contracts.csproj" />
+    <ProjectReference Include="..\ILP.Core.Data.Entities\ILP.Core.Data.Entities.csproj" />
+    <ProjectReference Include="..\ILP.Core.Data.Repositories\ILP.Core.Data.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ILP.Core.Data.Contracts\**" />
+    <Compile Remove="ILP.Core.Data.Entities\**" />
+    <Compile Remove="ILP.Core.Data.Repositories\**" />
+    <Compile Remove="ILP.Core.Data.Services\**" />
+    <Compile Remove="ILP.Core.Data\**" />
+    <Content Remove="ILP.Core.Data.Contracts\**" />
+    <Content Remove="ILP.Core.Data.Entities\**" />
+    <Content Remove="ILP.Core.Data.Repositories\**" />
+    <Content Remove="ILP.Core.Data.Services\**" />
+    <Content Remove="ILP.Core.Data\**" />
+    <EmbeddedResource Remove="ILP.Core.Data.Contracts\**" />
+    <EmbeddedResource Remove="ILP.Core.Data.Entities\**" />
+    <EmbeddedResource Remove="ILP.Core.Data.Repositories\**" />
+    <EmbeddedResource Remove="ILP.Core.Data.Services\**" />
+    <EmbeddedResource Remove="ILP.Core.Data\**" />
+    <None Remove="ILP.Core.Data.Contracts\**" />
+    <None Remove="ILP.Core.Data.Entities\**" />
+    <None Remove="ILP.Core.Data.Repositories\**" />
+    <None Remove="ILP.Core.Data.Services\**" />
+    <None Remove="ILP.Core.Data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="ILP.Core.Data.Services\ILP.Core.Data.Services.csproj" />
+    <ProjectReference Include="ILP.Core.Data\ILP.Core.Data.csproj" />
+  </ItemGroup>
+
+</Project>
