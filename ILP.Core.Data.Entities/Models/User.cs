@@ -7,16 +7,15 @@ namespace ILP.Core.Data.Entities.Models
     public class User : IEntity
     {
         [Key, Column("UserId")]
-        public string Id { get; set; }
+        public string Id { get; set; } = null!;
         [Required]
-        public string FirstName { get; set; }
+        public string FirstName { get; set; } = null!;
         [Required]
-        public string LastName { get; set; }
-        public string? FatherName { get; set; }
+        public string LastName { get; set; } = null!;
+        public string? FatherName { get; set; } = null;
+        public ICollection<Group>? Groups { get; }
         [JsonIgnore]
-        public ICollection<Group>? Groups { get; set; }
-        [JsonIgnore]
-        public ICollection<Fellows> Fellows { get; }
+        public IList<Fellow>? Fellows { get; } = new List<Fellow>();
 
     }
 }

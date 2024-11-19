@@ -1,6 +1,7 @@
 ﻿using ILP.Core.Data.Contracts.Repositories;
 using ILP.Core.Data.Entities;
 using ILP.Core.Data.Entities.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ILP.Core.Data.Repositories
 {
@@ -29,6 +30,11 @@ namespace ILP.Core.Data.Repositories
             return DatabaseContext.SaveChanges();
         }
 
+        public IQueryable<Group> GetAll()
+        {
+            return DatabaseContext.Groups.AsNoTracking();
+        }
+
         public Group? GetById(string id)
         {
             return DatabaseContext.Groups.FirstOrDefault(x => x.Id == id);
@@ -36,13 +42,18 @@ namespace ILP.Core.Data.Repositories
 
         public Group? GetByIdWithIncludedEntities(string id)
         {
-            return DatabaseContext.Groups.FirstOrDefault(x => x.Id == id);
+            return DatabaseContext.Groups.Include(x => x.Fellows).FirstOrDefault(i => i.Id == id);
         }
 
         public int Update(Group entity)
         {
             DatabaseContext.Groups.Update(entity);
             return DatabaseContext.SaveChanges();
+        }
+
+        public IQueryable<Group> GetAllWithIncludedEntities()
+        {
+            return DatabaseContext.Groups.Include(x => x.Users).AsNoTracking();
         }
     }
 }

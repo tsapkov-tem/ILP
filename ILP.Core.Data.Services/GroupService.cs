@@ -12,5 +12,12 @@ namespace ILP.Core.Data.Services
             : base(dbContextOptions, new GroupRepository(new DatabaseContext(dbContextOptions)))
         {
         }
+
+        public IEnumerable<Group> GetAllByUser(string userId)
+        {
+            using var dbContext = new DatabaseContext(DbContextOptions);
+            var repository = new GroupRepository(dbContext);
+            return repository.GetAllWithIncludedEntities().Where(x => x.Fellows!.Any(x => x.UserId == userId)).ToList();
+        }
     }
 }

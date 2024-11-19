@@ -7,7 +7,6 @@ namespace ILP.Core.Data.Entities
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Group> Groups { get; set; }
-
         public DatabaseContext(DbContextOptions options) : base(options) { }
         public DatabaseContext() { }
 
@@ -17,7 +16,7 @@ namespace ILP.Core.Data.Entities
                 .Entity<Group>()
                 .HasMany(g => g.Users)
                 .WithMany(u => u.Groups)
-                .UsingEntity<Fellows>(
+                .UsingEntity<Fellow>(
                     f => f.HasOne(fellow => fellow.User)
                     .WithMany(user => user.Fellows)
                     .HasForeignKey(fellow => fellow.UserId),

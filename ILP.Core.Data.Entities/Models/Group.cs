@@ -8,12 +8,12 @@ namespace ILP.Core.Data.Entities.Models
     public class Group : IEntity
     {
         [Key, Column("GroupId")]
-        public string Id { get; set; }
+        public string Id { get; set; } = null!;
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
         [JsonIgnore]
-        public ICollection<User>? Users { get; set; }
+        public ICollection<User>? Users { get; }
         [JsonIgnore]
-        public ICollection<Fellows>? Fellows { get; set; }
+        public IList<Fellow>? Fellows { get; } = new List<Fellow>();
     }
 }
