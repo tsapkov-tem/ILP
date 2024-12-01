@@ -5,14 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ILP.Core.Data.Repositories
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository(DatabaseContext databaseContext) : IUserRepository
     {
-        private readonly DatabaseContext DatabaseContext;
-
-        public UserRepository(DatabaseContext databaseContext)
-        {
-            DatabaseContext = databaseContext;
-        }
+        private readonly DatabaseContext DatabaseContext = databaseContext;
 
         public int Create(User entity)
         {

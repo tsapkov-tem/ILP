@@ -5,14 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ILP.Core.Data.Repositories
 {
-    public class GroupRepository : IGroupRepository
+    public class GroupRepository(DatabaseContext databaseContext) : IGroupRepository
     {
-        private readonly DatabaseContext DatabaseContext;
-
-        public GroupRepository(DatabaseContext databaseContext)
-        {
-            DatabaseContext = databaseContext;
-        }
+        private readonly DatabaseContext DatabaseContext = databaseContext;
 
         public int Create(Group entity)
         {
@@ -24,7 +19,7 @@ namespace ILP.Core.Data.Repositories
         {
             var entity = DatabaseContext.Groups.FirstOrDefault(x => x.Id == id);
             if (entity == null)
-                throw new Exception($"The user with id {id} wasn't found");
+                throw new Exception($"The group with id {id} wasn't found");
 
             DatabaseContext.Groups.Remove(entity);
             return DatabaseContext.SaveChanges();

@@ -5,8 +5,14 @@ namespace ILP.Core.Data.Entities
 {
     public class DatabaseContext : DbContext
     {
-        public DbSet<User> Users { get; set; }
+        public DbSet<Comment> Comments { get; set; }
         public DbSet<Group> Groups { get; set; }
+        public DbSet<Lecture> Lectures { get; set; }
+        public DbSet<LecturePlan> LecturePlans { get; set; }
+        public DbSet<NoteLecture> NoteLectures { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<Models.Task> Tasks {  get; set; }
+        public DbSet<User> Users { get; set; }
         public DatabaseContext(DbContextOptions options) : base(options) { }
         public DatabaseContext() { }
 
