@@ -24,6 +24,19 @@ namespace ILP.Core.Data.Entities
                     .WithMany(group => group.Fellows)
                     .HasForeignKey(fellow => fellow.GroupId)
                     );
+
+            modelBuilder
+                .Entity<Lecture>()
+                .HasMany(l => l.Users)
+                .WithMany(u => u.Lectures)
+                .UsingEntity<VisitLecture>(
+                    f => f.HasOne(visit => visit.User)
+                    .WithMany(user => user.VisitLectures)
+                    .HasForeignKey(visit => visit.UserId),
+                    f => f.HasOne(visit => visit.Lecture)
+                    .WithMany(lecture => lecture.VisitLectures)
+                    .HasForeignKey(visit => visit.LectureId)
+                    );
         }
     }
 }

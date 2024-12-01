@@ -16,6 +16,15 @@ namespace ILP.Core.Data.Entities.Models
         public ICollection<Group>? Groups { get; }
         [JsonIgnore]
         public IList<Fellow>? Fellows { get; } = new List<Fellow>();
-
+        [JsonIgnore]
+        public ICollection<Post>? Posts { get; }
+        [JsonIgnore]
+        public ICollection<Comment>? Comments { get; }
+        [JsonIgnore]
+        public ICollection<Lecture>? Lectures { get; }
+        [JsonIgnore]
+        public ICollection<VisitLecture>? VisitLectures { get; }
+        [JsonIgnore]
+        public ICollection<Lecture>? NoteLectures { get; }
     }
 }

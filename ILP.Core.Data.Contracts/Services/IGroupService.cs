@@ -4,6 +4,6 @@ namespace ILP.Core.Data.Contracts.Services
 {
     public interface IGroupService : IBaseService<Group>
     {
-        public IEnumerable<Group> GetAllByUser(string userId);
+        public IEnumerable<Group> GetAllByUserId(string userId);
     }
 }

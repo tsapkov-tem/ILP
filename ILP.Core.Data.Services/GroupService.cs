@@ -13,11 +13,20 @@ namespace ILP.Core.Data.Services
         {
         }
 
-        public IEnumerable<Group> GetAllByUser(string userId)
+        
+
+        public IEnumerable<Group> GetAllByUserId(string userId)
         {
-            using var dbContext = new DatabaseContext(DbContextOptions);
-            var repository = new GroupRepository(dbContext);
-            return repository.GetAllWithIncludedEntities().Where(x => x.Fellows!.Any(x => x.UserId == userId)).ToList();
+            try
+            {
+                using var dbContext = new DatabaseContext(DbContextOptions);
+                var repository = new GroupRepository(dbContext);
+                return repository.GetAllWithIncludedEntities().Where(x => x.Fellows!.Any(x => x.UserId == userId));
+            }catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                throw new Exception($"Error on querying database: {ex.Message}");
+            }
         }
     }
 }

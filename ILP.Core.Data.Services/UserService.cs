@@ -14,6 +14,22 @@ namespace ILP.Core.Data.Services
         {
         }
 
+        public IEnumerable<User> GetAllByGroupId(string groupId)
+        {
+            try
+            {
+                using var dbContext = new DatabaseContext(DbContextOptions);
+                var repository = new UserRepository(dbContext);
+
+                return repository.GetAllWithIncludedEntities().Include(x => x.Groups).Where(x => x.Groups!.Any(x => x.Id == groupId));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                throw new Exception($"Error on querying database: {ex.Message}");
+            }
+        }
+
         public new User GetByIdWithIncludedEntities(string id)
         {
             try
@@ -26,10 +42,10 @@ namespace ILP.Core.Data.Services
                     throw new Exception($"{typeof(User)} not found in database");
                 return result;
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                Console.WriteLine(e);
-                throw new Exception($"Error on querying database: {e.Message}");
+                Console.WriteLine(ex);
+                throw new Exception($"Error on querying database: {ex.Message}");
             }
         }
     }

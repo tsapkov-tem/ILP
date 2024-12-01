@@ -29,6 +29,6 @@ users.MapGet("/User", () => usersService.GetByIdWithIncludedEntities("DemoUser")
 var groups = app.MapGroup("/Groups");
 var groupsService = serviceManager.GroupService;
 
-groups.MapGet("/Group", () => groupsService.GetAllByUser("DemoUser"));
+groups.MapGet("/Group", () => groupsService.GetAllByUserId("DemoUser"));
 
 app.Run();
