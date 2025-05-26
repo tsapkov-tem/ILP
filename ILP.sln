@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILP.Api", "ILP.Api.csproj", "{7FD61F89-DC13-4BC8-B6F1-43647063BC6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ILP.Api", "ILP.Api.csproj", "{7FD61F89-DC13-4BC8-B6F1-43647063BC6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILP.Core.Data", "ILP.Core.Data\ILP.Core.Data.csproj", "{D7E91613-DF83-413D-9921-272DC92832BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ILP.Core.Data", "ILP.Core.Data\ILP.Core.Data.csproj", "{D7E91613-DF83-413D-9921-272DC92832BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILP.Core.Data.Contracts", "ILP.Core.Data.Contracts\ILP.Core.Data.Contracts.csproj", "{0128C654-FB49-4D40-A886-AEB8BBCD4176}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ILP.Core.Data.Contracts", "ILP.Core.Data.Contracts\ILP.Core.Data.Contracts.csproj", "{0128C654-FB49-4D40-A886-AEB8BBCD4176}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILP.Core.Data.Entities", "ILP.Core.Data.Entities\ILP.Core.Data.Entities.csproj", "{65BCC5AC-B001-4439-84B1-9FC12A7E5DE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ILP.Core.Data.Entities", "ILP.Core.Data.Entities\ILP.Core.Data.Entities.csproj", "{65BCC5AC-B001-4439-84B1-9FC12A7E5DE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILP.Core.Data.Repositories", "ILP.Core.Data.Repositories\ILP.Core.Data.Repositories.csproj", "{86D625D9-093A-4231-A345-866E4EDB4B63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ILP.Core.Data.Repositories", "ILP.Core.Data.Repositories\ILP.Core.Data.Repositories.csproj", "{86D625D9-093A-4231-A345-866E4EDB4B63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILP.Core.Data.Services", "ILP.Core.Data.Services\ILP.Core.Data.Services.csproj", "{EB60D903-BE81-4036-92BE-C590F9A2AD1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ILP.Core.Data.Services", "ILP.Core.Data.Services\ILP.Core.Data.Services.csproj", "{EB60D903-BE81-4036-92BE-C590F9A2AD1D}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "ilp.front", "ILP.Front\ilp.front.esproj", "{8CA61F68-BC97-4848-A28D-C8E13687B173}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,12 @@ Global
 		{EB60D903-BE81-4036-92BE-C590F9A2AD1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB60D903-BE81-4036-92BE-C590F9A2AD1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB60D903-BE81-4036-92BE-C590F9A2AD1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA61F68-BC97-4848-A28D-C8E13687B173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA61F68-BC97-4848-A28D-C8E13687B173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA61F68-BC97-4848-A28D-C8E13687B173}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8CA61F68-BC97-4848-A28D-C8E13687B173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA61F68-BC97-4848-A28D-C8E13687B173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA61F68-BC97-4848-A28D-C8E13687B173}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

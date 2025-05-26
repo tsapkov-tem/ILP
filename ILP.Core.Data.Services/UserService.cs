@@ -14,7 +14,7 @@ namespace ILP.Core.Data.Services
         {
         }
 
-        public IEnumerable<User> GetAllByGroupId(string groupId)
+        public IQueryable<User> GetAllByGroupId(string groupId)
         {
             try
             {

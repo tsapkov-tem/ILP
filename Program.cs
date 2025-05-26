@@ -4,7 +4,6 @@ using ILP.Core.Data.Entities;
 using ILP.Core.Data.Initialization;
 using ILP.Core.Data.Services;
 using Microsoft.EntityFrameworkCore;
-using System.Security.Principal;
 
 var builder = WebApplication.CreateBuilder(args);
 
