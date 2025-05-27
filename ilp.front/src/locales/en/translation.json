@@ -1,0 +1,20 @@
+{
+    "home": "Home",
+    "learning": "Learning",
+    "path": "My learning path",
+    "community": "Channels",
+
+    "heroTitle": "Unlock Your Full Potential with Personalized Learning",
+    "heroText": "EduPath adapts to your learning style and pace, offering tailored courses and interactive content to help you achieve your goals faster.",
+    "heroStart": "Start Learning",
+    "heroExplore": "Explore Courses",
+
+    "ctaTitle": "Ready to Transform Your Learning Experience?",
+    "ctaText": "Join us and follow your own learning trajectory with ILPy.",
+
+    "footer": {
+        "text": "Personalized learning platform to help you achieve your goals faster."
+    },
+
+    "error": "error"
+}

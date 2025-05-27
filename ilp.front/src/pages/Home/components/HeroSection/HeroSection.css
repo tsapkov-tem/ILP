@@ -1,0 +1,69 @@
+.hero{
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.9) 0%, rgba(139, 195, 74, 0.9) 100%);
+}
+
+.hero-container{
+    display: block;
+    
+    margin-right: auto;
+    padding-left: 5rem;
+    padding-right: 1rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    max-width: 42rem;
+}
+
+.hero-container__title{
+    display: block;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+.hero-container__text{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-button{
+    transition-duration: 300ms;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-right: 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    border: 2px solid rgb(243 244 246);
+}
+
+.hero-button_start{
+    background-color: rgb(243 244 246);
+    color: #4caf50;
+}
+
+.hero-button_start:hover{
+    background-color: rgb(229, 231, 235);
+}
+
+.hero-button_explore{
+    color: rgb(243 244 246);
+    background-color: transparent;
+}
+
+.hero-button_explore:hover{
+    color: rgb(76 175 80);
+    background-color: rgb(243 244 246);
+}

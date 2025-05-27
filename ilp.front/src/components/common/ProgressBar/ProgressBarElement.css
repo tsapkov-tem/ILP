@@ -1,0 +1,24 @@
+.course-progress {
+    margin-bottom: 0.75rem;
+}
+
+.course-progress-info {
+    display: flex;
+    margin-bottom: 0.25rem;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.progress-bar {
+    background-color: rgb(229 231 235);
+    border-radius: 9999px;
+    width: 100%;
+    height: 0.5rem;
+}
+
+.progress-bar__value {
+    border-radius: 9999px;
+    height: 0.5rem;
+    transition: width 0.5s ease-in-out;
+}

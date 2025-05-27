@@ -1,0 +1,150 @@
+.learning-path {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: rgb(255 255 255);
+}
+
+.learning-path-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .learning-path-container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .learning-path-container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .learning-path-container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .learning-path-container {
+        max-width: 1536px;
+    }
+}
+
+.current-path-info {
+    flex-direction: column;
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .current-path-info {
+        flex-direction: row;
+    }
+}
+
+.learning-path-introduce {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.learning-path-introduce__title {
+    color: rgb(38 50 56);
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+
+@media (min-width: 768px) {
+    .current-path-info__container {
+        padding-left: 2rem;
+        width: 66.666667%;
+    }
+}
+
+.learning-path-introduce__description {
+    color: rgb(75 85 99);
+    max-width: 42rem;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.current-path-lessons {
+    padding: 2rem;
+    background-color: rgb(249 250 251);
+    border-radius: 0.75rem;
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lessons {
+    margin-top: 1rem;
+}
+
+.learning-path-streak {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.streak-container {
+    align-items: center;
+    display: flex;
+}
+
+.full-path-button {
+    transition-duration: 300ms;
+    color: rgb(76 175 80);
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(255 255 255);
+    border: 2px solid rgb(76 175 80);
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.streak-container__icon{
+    padding: 0.75rem;
+    background-color: rgb(224, 252, 220);
+    border-radius: 9999px;
+    margin-right: 1rem;
+    fill: rgb(76 175 80);
+    line-height: 1;
+}
+
+.streak-container__icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.streak-info__text {
+    color: rgb(107 114 128);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin: 0;
+}
+
+.streak-info__value {
+    font-weight: 500;
+    margin: 0;
+}
+
+.full-path-button:hover {
+    color: rgb(255 255 255);
+    background-color: rgb(76 175 80);
+}

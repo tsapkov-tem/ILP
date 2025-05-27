@@ -1,0 +1,71 @@
+.current-course {
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .current-course {
+        margin-bottom: 0px;
+        width: 33.333333%;
+    }
+}
+
+.current-course__container {
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    padding: 1rem;
+    background-color: rgb(255 255 255);
+    border-radius: 0.5rem;
+}
+
+.current-course-info {
+    align-items: center;
+    display: flex;
+}
+
+.current-course__icon {
+    padding: 0.75rem;
+    background-color: rgb(219 234 254);
+    border-radius: 9999px;
+    margin-right: 1rem;
+    fill: blue;
+    line-height: 1;
+}
+
+.current-course__icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.current-course__icon svg {
+    fill: rgb(59 130 246);
+    width: 2rem;
+}
+
+.current-course-info__name {
+    font-weight: 500;
+}
+
+.current-course-info__unit {
+    color: rgb(107 114 128);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.current-course__button {
+    transition-duration: 300ms;
+    color: rgb(255 255 255);
+    font-weight: 500;
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(76 175 80);
+    border-radius: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+    text-transform: none;
+}
+
+.current-course__button:hover {
+    background-color: rgb(46 125 50);
+}

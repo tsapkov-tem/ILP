@@ -1,0 +1,29 @@
+{
+    "path": {
+        "title": "Personalized Learning Paths",
+        "text": "Our AI creates a customized curriculum based on your goals, strengths, and learning pace."
+    },
+    "recomendations": {
+        "title": "AI-Driven Recommendations",
+        "text": "Smart algorithms suggest the perfect next lesson to maximize your learning efficiency."
+    },
+    "gamified": {
+        "title": "Gamified Experience",
+        "text": "Earn points, badges, and rewards as you progress, making learning fun and engaging."
+    },
+    "lesson": {
+        "title": "Interactive Lessons",
+        "text": "Engage with multimedia content, quizzes, and practical exercises for better retention."
+    },
+    "community": {
+        "title": "Community Support",
+        "text": "Connect with fellow learners, ask questions, and share knowledge."
+    },
+    "crossplatform": {
+        "title": "Learn Anywhere",
+        "text": "Access your courses on any device, with progress synced across all platforms."
+    },
+
+    "introduceTitle": "Why Choose ILPy?",
+    "introduceText": "Our platform combines cutting-edge technology with proven learning methodologies to deliver exceptional results."
+}

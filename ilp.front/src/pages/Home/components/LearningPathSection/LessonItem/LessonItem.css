@@ -1,0 +1,47 @@
+.lesson {
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    padding: 1rem;
+    background-color: rgb(255 255 255);
+    border-radius: 0.5rem;
+    align-items: center;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.lesson__icon {
+    padding: 0.75rem;
+    background-color: rgb(252, 220, 238);
+    border-radius: 9999px;
+    margin-right: 1rem;
+    fill: rgb(253, 117, 194);
+    line-height: 1;
+}
+
+.lesson__icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.lesson-info {
+    flex-grow: 1;
+}
+
+.lesson-info__name {
+    font-weight: 500;
+    margin: 0;
+}
+
+.lessson-info__description {
+    color: rgb(107 114 128);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin: 0;
+}
+
+.lesson__duration {
+    color: rgb(107 114 128);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}

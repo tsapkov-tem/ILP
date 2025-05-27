@@ -1,0 +1,12 @@
+{
+    "coursesTitle": "Explore Our Courses",
+    "coursesText": "Find the perfect course to start or advance your learning journey.",
+    "viewCoursesButton": "View All Courses",
+
+    "categories": {
+        "all": "All Categories",
+        "begginer": "Begginer",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced"
+    }
+}
