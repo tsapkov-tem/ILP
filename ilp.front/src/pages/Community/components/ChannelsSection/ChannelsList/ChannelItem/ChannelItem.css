@@ -1,0 +1,30 @@
+.channel-item {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    display: flex;
+}
+
+.channel-item:hover{
+    background-color: rgb(243 244 246);
+}
+
+.channel-item svg {
+    fill: rgb(107 114 128);
+    margin-right: 0.5rem;
+    font-weight: 900;
+    width: 16px;
+    height: 16px;
+}
+
+.channel-item.active {
+    color: rgb(21 128 61);
+    background-color: rgb(240 253 244);
+}
+
+.channel-item.active svg {
+    fill: rgb(34 197 94);
+}

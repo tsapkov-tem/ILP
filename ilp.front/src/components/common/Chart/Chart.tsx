@@ -39,9 +39,7 @@ const BarChart: React.FC<BarChartProps> = ({ width = 600, height = 400 }) => {
     const barWidth = 30;
     const gap = 20;
     const groupGap = 10;
-    const totalGroups = data.labels.length;
     const groupWidth = (barWidth + gap) * data.datasets.length + groupGap;
-    const availableWidth = canvas.width - padding * 2;
     const startX = padding;
     const startY = padding;
 

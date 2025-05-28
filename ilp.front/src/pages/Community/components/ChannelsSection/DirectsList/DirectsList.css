@@ -1,0 +1,24 @@
+.directs {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border-top: 1px solid rgb(229 231 235)
+}
+
+.directs__title{
+    color: rgb(107 114 128);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin: 0;
+}
+
+.directs__list {
+    margin-top: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

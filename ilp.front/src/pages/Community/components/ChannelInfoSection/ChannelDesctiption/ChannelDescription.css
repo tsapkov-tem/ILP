@@ -1,0 +1,20 @@
+.channel-description {
+    padding: 1rem;
+    border-bottom: 1px solid rgb(229 231 235);
+}
+
+.channel-description__header {
+    color: rgb(55 65 81);
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.channel-description__text {
+    color: rgb(75 85 99);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin: 0;
+}

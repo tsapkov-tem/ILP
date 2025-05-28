@@ -1,0 +1,60 @@
+.direct {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    display: flex;
+}
+
+.direct:hover{
+    background-color: rgb(243 244 246);
+}
+
+
+.direct.active {
+    color: rgb(21 128 61);
+    background-color: rgb(240 253 244);
+}
+
+.direct-avatar {
+    position: relative;
+    background-color: rgb(206, 206, 206);
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    display: flex;
+}
+
+.direct-avatar svg {
+    width: 12px;
+    height: 12px;
+    fill: white;
+}
+
+.direct-avatar__status {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(34 197 94);
+    border-radius: 9999px;
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.direct-avatar__status.active {
+    background-color: rgb(34 197 94);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.direct__name {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-left: 0.5rem;
+}

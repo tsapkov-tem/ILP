@@ -1,0 +1,65 @@
+.channels-section{
+    background-color: rgb(255 255 255);
+    border: 1px solid rgb(229 231 235);
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+    width: 16rem;
+}
+
+.channels-functions {
+    height: 45px;
+    align-items: center;
+    display: flex;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(229 231 235);
+}
+
+.channels-functions__container {
+    border: 1px solid rgb(243 244 246);
+    background-color: rgb(243 244 246);
+    padding: 0 0.75rem;
+    border-radius: 7px;
+    width: 16rem;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+.channels-functions__container:focus-within {
+ border: 1px solid rgb(76 175 80);
+}
+
+.channels-functions__input {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+    background-color: rgb(243 244 246);
+}
+
+.channels-functions__input:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-color: transparent;
+}
+
+.channels-functions__container svg {
+    fill: rgb(156 163 175);
+    width: 16px;
+    height: 16px;
+}
+
+.chats {
+    flex: 1 1 0%;
+    overflow-y: auto;
+}
+
+.profile {
+    min-height: 40px;
+    max-height: 40px;
+    padding: 0.75rem;
+    border-top: 1px solid rgb(229 231 235);
+}
