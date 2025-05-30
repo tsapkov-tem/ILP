@@ -1,0 +1,25 @@
+.skills-mastery {
+    background-color: white;
+    border-radius: 0.75rem; /* 12px */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+}
+
+.skills-mastery__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.skills-mastery__header__title {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+    font-weight: 600;
+    color: #1f2937; 
+}
+
+.skills-mastery__list {
+    margin-top: 1rem; /* 16px */
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,12 @@
+.details-button {
+    border: none;
+    background-color: transparent;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #10b981;
+    cursor: pointer;
+}
+
+.details-button:hover {
+    color: #109166;
+}

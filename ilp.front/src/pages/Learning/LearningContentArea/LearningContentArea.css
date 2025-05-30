@@ -1,0 +1,105 @@
+.learning-area-header {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(255 255 255);
+    border-bottom: 1px solid rgb(229 231 235);
+}
+
+.learning-area-header__container {
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.learning-area {
+    overflow: hidden;
+    flex-direction: column;
+    flex: 1 1 0%;
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .learning-area-header__container {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+.learning-area-header__info {
+    margin-bottom: 0.5rem;
+}
+
+.learning-area-header__info__title {
+    color: rgb(17 24 39);
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin: 0;
+}
+
+.learning-area-header__info__description {
+    color: rgb(107 114 128);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin: 0;
+}
+
+.learning-area-header__tabs {
+    display: flex;
+}
+
+.learning-area-header__button {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: rgb(55 65 81);
+    border-radius: 0.375rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    margin: 0 1rem;
+}
+
+.learning-area-header__button.active {
+    background-color: rgb(5 150 105);
+    color: rgb(255 255 255);
+}
+
+.learning-area-header__button svg {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+    fill: rgb(55 65 81)
+}
+
+.learning-area-header__button.active svg {
+    fill: rgb(255 255 255);
+}
+
+.learning-area__content {
+    display: none;
+}
+
+.learning-area__content.active {
+    display: block;
+}

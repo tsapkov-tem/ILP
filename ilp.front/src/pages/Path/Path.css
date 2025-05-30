@@ -1,4 +1,25 @@
 .path {
-    background-color: rgb(249 250 251);
-    margin: 0;
+  background-color: rgb(249 250 251);
+  margin: 0;
+}
+
+.path__container {
+  width: calc(100%-1.5rem);
+  max-width: calc(100%-1.5rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+}
+
+.path__details {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;  
+}
+
+@media (min-width: 1024px) {
+  .path__details {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -1,0 +1,45 @@
+.learning-sidebar {
+    background-color: rgb(255 255 255);
+    border-right: 1px solid rgb(229 231 235);
+    overflow-y: auto;
+    width: 16rem;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .learning-sidebar {
+        display: block;
+    }
+}
+
+.learning-sidebar__container {
+    padding: 1rem;
+}
+
+.learning-sidebar-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.learning-sidebar-info__title {
+    font-size: 0.875rem; 
+    font-weight: 600; 
+    color: #6b7280; 
+    letter-spacing: 0.05em;
+     text-transform: uppercase;
+}
+
+.learning-sidebar-info__name {
+    font-size: 0.75rem;
+    background-color: #d1fae5;
+    color: #065f46; 
+    padding: 0.125rem 0.5rem; 
+    border-radius: 9999px;
+}
+
+.learning-sidebar__modules {
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+}

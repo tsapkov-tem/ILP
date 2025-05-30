@@ -12,7 +12,7 @@ const RadarChart: React.FC<RadarChartProps> = ({ width = 600, height = 600 }) =>
     labels: ['Variables', 'Functions', 'Loops', 'Arrays', 'Objects', 'DOM'],
     datasets: [
       {
-        label: 'Your Performance',
+        label: 'Твоя успеваемость',
         data: [85, 78, 92, 65, 70, 80],
         fillColor: 'rgba(76, 175, 80, 0.2)',
         borderColor: '#4CAF50',
@@ -20,7 +20,7 @@ const RadarChart: React.FC<RadarChartProps> = ({ width = 600, height = 600 }) =>
         pointRadius: 4
       },
       {
-        label: 'Class Average',
+        label: 'Средняя в группе',
         data: [75, 68, 82, 70, 65, 75],
         fillColor: 'rgba(156, 163, 175, 0.2)',
         borderColor: '#9CA3AF',
@@ -110,15 +110,15 @@ const RadarChart: React.FC<RadarChartProps> = ({ width = 600, height = 600 }) =>
     });
 
     // Draw legend
-    ctx.font = '14px Arial';
+    ctx.font = '12px Arial';
     ctx.textAlign = 'left';
     ctx.textBaseline = 'middle';
 
     data.datasets.forEach((dataset, i) => {
       ctx.fillStyle = dataset.borderColor;
-      ctx.fillRect(centerX - radius, centerY - radius + i * 30, 20, 20);
+      ctx.fillRect(0, centerY - radius + i * 30, 10, 10);
       ctx.fillStyle = '#333';
-      ctx.fillText(dataset.label, centerX - radius + 30, centerY - radius + i * 30 + 10);
+      ctx.fillText(dataset.label, 15, centerY - radius + i * 30 + 6);
     });
 
     // Draw radar areas

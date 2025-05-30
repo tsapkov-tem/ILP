@@ -9,7 +9,7 @@ const LinearChart: React.FC<LinearChartProps> = ({ width = 600, height = 400 }) 
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const data = {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+    labels: ['Янв', 'Фев', 'Март', 'Апр', 'Май', 'Июнь'],
     datasets: [{
       label: 'Course Progress',
       data: [10, 25, 42, 55, 70, 75],

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ProgressBarElement } from "../../../components/common/ProgressBar/ProgressBarElement";
 import type { ProgressBar } from "../../../types/ProgressBar";
 import "./SkillsMastery.css";
+import { DetailsButton } from "../../../components/common/DetailsButton/DetailsButton";
 
 export const SkillsMastery : React.FC = () => {
     const [progresses, setProgresses] = useState<ProgressBar[]>([]);
@@ -19,7 +20,7 @@ export const SkillsMastery : React.FC = () => {
         <div className="skills-mastery">
             <div className="skills-mastery__header">
                 <h2 className="skills-mastery__header__title">Skills Mastery</h2>
-                <button className="skills-mastery__header__button">View All</button>
+                <DetailsButton text="Показать все"/>
             </div>
             <div className="skills-mastery__list">
                 {progresses.map((progress) => (

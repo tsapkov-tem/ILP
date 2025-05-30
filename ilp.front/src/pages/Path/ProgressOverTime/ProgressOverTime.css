@@ -1,4 +1,20 @@
 .progress-over-time {
-    width: 300px;
-    height: 200px;
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+}
+
+.progress-over-time__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.progress-over-time__header__title {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: #1f2937;
 }

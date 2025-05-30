@@ -9,15 +9,15 @@ const BarChart: React.FC<BarChartProps> = ({ width = 600, height = 400 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const data = {
-    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+    labels: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
     datasets: [
       {
-        label: 'Completed',
+        label: 'Завершено',
         data: [3, 5, 2, 4, 6, 1, 2],
         color: '#4CAF50'
       },
       {
-        label: 'Pending',
+        label: 'Предстоящие',
         data: [1, 0, 2, 1, 0, 0, 1],
         color: '#E5E7EB'
       }
@@ -36,9 +36,9 @@ const BarChart: React.FC<BarChartProps> = ({ width = 600, height = 400 }) => {
 
     // Set dimensions
     const padding = 40;
-    const barWidth = 30;
-    const gap = 20;
-    const groupGap = 10;
+    const barWidth = 25;
+    const gap = 7;
+    const groupGap = 7;
     const groupWidth = (barWidth + gap) * data.datasets.length + groupGap;
     const startX = padding;
     const startY = padding;

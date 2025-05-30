@@ -5,6 +5,7 @@ import { LessonItem } from "../../Home/components/LearningPathSection/LessonItem
 import QuestionIcon from "../../../components/Icons/QuestionIcon";
 import PencilIcon from "../../../components/Icons/PencilIcon";
 import VideoIcon from "../../../components/Icons/VideoIcon";
+import { DetailsButton } from "../../../components/common/DetailsButton/DetailsButton";
 
 export const Recomendation : React.FC = () => {
     const [recomendations, setRecomendations] = useState<Lesson[]>([]);
@@ -21,7 +22,7 @@ export const Recomendation : React.FC = () => {
         <div className="recomendation">
             <div className="recomendation__header">
                 <h2 className="recomendation__header__title">Recommended Next Steps</h2>
-                <button className="recomendation__header__button">See More</button>
+                <DetailsButton text="Показать больше"/>
             </div>
             <div className="recomendation__list">
                 {

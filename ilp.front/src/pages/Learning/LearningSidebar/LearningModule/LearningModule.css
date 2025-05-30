@@ -1,0 +1,17 @@
+.module {
+    margin-bottom: 1.5rem;
+}
+
+.module__name {
+    font-size: 0.75rem; 
+    font-weight: 500; 
+    color: #6b7280; 
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.module__parts {
+    margin-top: 0.25rem; 
+    margin-bottom: 0.25rem;
+}

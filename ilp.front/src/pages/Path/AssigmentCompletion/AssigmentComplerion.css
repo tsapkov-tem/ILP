@@ -1,4 +1,24 @@
 .assigment-completion {
-    width: 300px;
-    height: 200px;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+}
+
+.assigment-completion-functions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.assigment-completion-functions__header {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.assigment-completion-functions__buttons {
+    display: flex;
+    gap: 0.5rem;
 }
